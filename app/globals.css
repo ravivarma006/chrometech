@@ -812,7 +812,10 @@ h3 {
   height: 100%;
   background: white;
   padding: 30px 24px;
+  /* Extra bottom padding so the "Request Support" button clears mobile browser toolbars */
+  padding-bottom: 60px;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch; /* smooth momentum scroll on iOS */
   transform: translateX(100%);
   transition: transform 0.28s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -2232,7 +2235,8 @@ h3 {
 /* Mobile adjustments */
 @media (max-width: 480px) {
   .gr-badge {
-    bottom: 16px;
+    /* 80px keeps the badge well above the iOS Safari toolbar (~50px) and Android nav bar */
+    bottom: 80px;
     right: 14px;
     padding: 8px 12px 8px 10px;
   }
