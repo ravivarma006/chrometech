@@ -15,7 +15,7 @@ export default function HeroSection() {
         loop
         playsInline
         preload="none"
-        poster="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=60"
+        poster="/hero-bg.jpg"
         className="hero-video"
       >
         <source
@@ -65,10 +65,11 @@ export default function HeroSection() {
         {/* Right column — LCP image, priority loaded */}
         <div className="hero-card">
           <Image
-            src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80"
+            src="/hero-datacenter.jpg"
             alt="Data center infrastructure racks"
             width={1200}
             height={430}
+            sizes="(max-width: 1000px) 100vw, 50vw"
             style={{ height: 430, width: "100%", objectFit: "cover", borderRadius: 22 }}
             priority
             fetchPriority="high"

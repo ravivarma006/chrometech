@@ -160,10 +160,10 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${manrope.variable}`}>
       <head>
         <link rel="icon" href="/icon.svg" type="image/svg+xml" />
-        {/* Preconnect to image CDNs for faster LCP */}
-        <link rel="preconnect" href="https://images.unsplash.com" />
-        <link rel="preconnect" href="https://chrome-tech.com" />
+        {/* Preload LCP resources */}
+        <link rel="preload" href="/hero-bg.jpg" as="image" />
         <link rel="dns-prefetch" href="https://videos.pexels.com" />
+        <link rel="dns-prefetch" href="https://images.unsplash.com" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

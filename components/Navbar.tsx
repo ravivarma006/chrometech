@@ -55,12 +55,11 @@ export default function Navbar() {
           {/* Brand */}
           <Link className="brand" href="/">
             <Image
-              src="https://chrome-tech.com/wp-content/uploads/2025/12/cropped-20251216_185708.png"
+              src="/logo.png"
               alt="Chrome Tech LLC logo"
               width={120}
               height={32}
               style={{ width: 120, height: "auto" }}
-              priority
             />
           </Link>
 

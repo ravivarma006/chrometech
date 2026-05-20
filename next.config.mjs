@@ -10,7 +10,6 @@ const nextConfig = {
     imageSizes: [16, 32, 64, 96, 128, 256],
     remotePatterns: [
       { protocol: "https", hostname: "images.unsplash.com" },
-      { protocol: "https", hostname: "chrome-tech.com" },
     ],
   },
 

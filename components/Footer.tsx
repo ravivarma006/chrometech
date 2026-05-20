@@ -76,7 +76,7 @@ export default function Footer() {
           {/* Brand column */}
           <div>
             <Image
-              src="https://chrome-tech.com/wp-content/uploads/2025/12/cropped-20251216_185708.png"
+              src="/logo.png"
               alt="Chrome Tech LLC logo"
               width={150}
               height={40}
