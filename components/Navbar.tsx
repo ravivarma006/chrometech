@@ -47,6 +47,7 @@ const services: { icon: ReactNode; label: string; href: string }[] = [
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
 
   return (
     <>
@@ -161,18 +162,45 @@ export default function Navbar() {
             Insights
           </Link>
 
-          <div className="mobile-services-label">Our Services</div>
-          {services.map((svc) => (
-            <Link
-              key={svc.href}
-              href={svc.href}
-              className="mobile-service-link"
-              onClick={() => setMenuOpen(false)}
+          {/* Services accordion — tap to expand/collapse */}
+          <button
+            className="mobile-services-toggle"
+            onClick={() => setServicesOpen((o) => !o)}
+            aria-expanded={servicesOpen}
+          >
+            <span className="mobile-services-toggle-label">Our Services</span>
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 12 12"
+              fill="none"
+              className={`mobile-services-chevron${servicesOpen ? " open" : ""}`}
             >
-              <span style={{ color: "var(--blue)" }}>{svc.icon}</span>
-              {svc.label}
-            </Link>
-          ))}
+              <path
+                d="M2 4l4 4 4-4"
+                stroke="currentColor"
+                strokeWidth="1.8"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </button>
+
+          {servicesOpen && (
+            <div className="mobile-services-submenu">
+              {services.map((svc) => (
+                <Link
+                  key={svc.href}
+                  href={svc.href}
+                  className="mobile-service-link"
+                  onClick={() => { setMenuOpen(false); setServicesOpen(false); }}
+                >
+                  <span style={{ color: "var(--blue)" }}>{svc.icon}</span>
+                  {svc.label}
+                </Link>
+              ))}
+            </div>
+          )}
 
           <div style={{ marginTop: 28 }}>
             <Link

@@ -847,23 +847,56 @@ h3 {
 .mobile-nav-link:last-child {
   border-bottom: none;
 }
-.mobile-services-label {
-  font-size: 11px;
-  font-weight: 900;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+/* "Our Services" accordion toggle button */
+.mobile-services-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 14px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--line);
+  cursor: pointer;
+  text-align: left;
+}
+.mobile-services-toggle-label {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--navy);
+}
+.mobile-services-chevron {
   color: var(--blue);
-  margin: 20px 0 10px;
+  transition: transform 0.22s ease;
+  flex-shrink: 0;
+}
+.mobile-services-chevron.open {
+  transform: rotate(180deg);
+}
+
+/* Submenu revealed when accordion is open */
+.mobile-services-submenu {
+  background: var(--light);
+  border-radius: 14px;
+  margin: 8px 0 4px;
+  overflow: hidden;
 }
 .mobile-service-link {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 10px 0;
+  padding: 12px 14px;
   border-bottom: 1px solid var(--line);
   font-size: 14px;
   font-weight: 600;
   color: var(--navy);
+  transition: background 0.15s;
+}
+.mobile-service-link:last-child {
+  border-bottom: none;
+}
+.mobile-service-link:active {
+  background: #dbe7f3;
 }
 
 /* ── Service Page Hero ── */
