@@ -1,0 +1,11 @@
+# Chrome Tech LLC — robots.txt
+# CUSTOMIZE: Update the Sitemap URL to your production domain
+
+User-agent: *
+Allow: /
+
+# Disallow any admin or private paths if added later
+# Disallow: /admin/
+# Disallow: /api/
+
+Sitemap: https://chrome-tech.com/sitemap.xml
