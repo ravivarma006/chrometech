@@ -2021,6 +2021,86 @@ h3 {
   }
 }
 
+/* ─── WhatsApp Sticky Button ─────────────────────────────────────────── */
+
+/* Gentle pulse to attract attention without being obnoxious */
+@keyframes wa-pulse {
+  0%, 100% { box-shadow: 0 4px 20px rgba(37, 211, 102, 0.45); }
+  50%       { box-shadow: 0 4px 28px rgba(37, 211, 102, 0.7),
+                          0 0 0 8px rgba(37, 211, 102, 0.12); }
+}
+
+.wa-btn {
+  position: fixed;
+  /* Sit 12px above the top edge of the Google badge (badge: bottom 28px, height ~70px) */
+  bottom: 110px;
+  right: 24px;
+  z-index: 998; /* just below Google badge (999) */
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #25D366;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  animation: wa-pulse 2.8s ease-in-out infinite;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.wa-btn:hover {
+  animation: none;
+  transform: translateY(-3px) scale(1.07);
+  box-shadow: 0 8px 32px rgba(37, 211, 102, 0.6);
+}
+
+/* Tooltip — slides in from right on hover (desktop only) */
+.wa-tooltip {
+  position: absolute;
+  right: calc(100% + 12px);
+  top: 50%;
+  transform: translateY(-50%);
+  background: #1a1a2e;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 7px 12px;
+  border-radius: 8px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+  /* Arrow pointing right */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.18);
+}
+.wa-tooltip::after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 6px solid transparent;
+  border-left-color: #1a1a2e;
+}
+.wa-btn:hover .wa-tooltip {
+  opacity: 1;
+}
+
+/* Mobile: smaller button, raised higher above the Google badge */
+@media (max-width: 480px) {
+  .wa-btn {
+    /* Badge on mobile: bottom 80px, height ~60px → top at ~140px; add 12px gap → 152px */
+    bottom: 152px;
+    right: 14px;
+    width: 46px;
+    height: 46px;
+  }
+  /* Hide tooltip on touch devices — it won't be triggered by hover anyway */
+  .wa-tooltip {
+    display: none;
+  }
+}
+
 /* ─── Google Reviews Widget ───────────────────────────────────────────── */
 
 /* Sticky badge — fixed bottom right */

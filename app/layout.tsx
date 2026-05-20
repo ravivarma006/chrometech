@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Inter, Manrope } from "next/font/google";
 import "./globals.css";
 import GoogleReviewsWidget from "@/components/GoogleReviewsWidget";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -171,6 +172,7 @@ export default function RootLayout({
       </head>
       <body>
         {children}
+        <WhatsAppButton />
         <GoogleReviewsWidget />
       </body>
     </html>
