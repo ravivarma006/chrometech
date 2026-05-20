@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Manrope } from "next/font/google";
 import "./globals.css";
+import GoogleReviewsWidget from "@/components/GoogleReviewsWidget";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -168,7 +169,10 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <GoogleReviewsWidget />
+      </body>
     </html>
   );
 }
