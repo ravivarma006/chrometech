@@ -94,13 +94,27 @@ export default async function ArticlePage({ params }: Props) {
         {/* CTA */}
         <section className="dark">
           <div className="container" style={{ textAlign: "center", padding: "50px 0" }}>
-            <h2 style={{ fontSize: 28, marginBottom: 12 }}>
-              Need help with {article.category.toLowerCase()}?
-            </h2>
-            <p style={{ color: "#a8c8e8", fontSize: 17, maxWidth: 520, margin: "0 auto 24px" }}>
-              Chrome Tech provides expert {article.category.toLowerCase()} services
-              for businesses across Texas.
-            </p>
+            {article.category === "Leadership" ? (
+              <>
+                <h2 style={{ fontSize: 28, marginBottom: 12 }}>
+                  Ready to partner with Chrome Tech?
+                </h2>
+                <p style={{ color: "#a8c8e8", fontSize: 17, maxWidth: 520, margin: "0 auto 24px" }}>
+                  Let&apos;s talk about how Chrome Tech can support your business with
+                  expert IT infrastructure and technology services across Texas.
+                </p>
+              </>
+            ) : (
+              <>
+                <h2 style={{ fontSize: 28, marginBottom: 12 }}>
+                  Need help with {article.category.toLowerCase()}?
+                </h2>
+                <p style={{ color: "#a8c8e8", fontSize: 17, maxWidth: 520, margin: "0 auto 24px" }}>
+                  Chrome Tech provides expert {article.category.toLowerCase()} services
+                  for businesses across Texas.
+                </p>
+              </>
+            )}
             <Link href="/contact" className="btn btn-primary">
               Request a Consultation
             </Link>

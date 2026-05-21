@@ -15,9 +15,29 @@ export const categories = [
   "Networking",
   "IT Support",
   "Cabling",
+  "Leadership",
 ];
 
 export const articles: Article[] = [
+  {
+    title: "Building a Purpose-Driven IT Company: Leadership Lessons from Chrome Tech",
+    excerpt:
+      "Oladele 'Ola' Olora, President and Founder of Chrome Tech LLC, shares the leadership philosophy, core values, and hard-won lessons behind building one of Texas's trusted IT infrastructure firms.",
+    category: "Leadership",
+    date: "May 21, 2026",
+    image: "/ola-portrait.png",
+    slug: "leadership-lessons-chrome-tech",
+    content: [
+      "When I founded Chrome Tech LLC, I wasn't just starting a technology company — I was making a commitment to the communities and businesses of Texas that they deserved world-class IT infrastructure, delivered with integrity, expertise, and genuine care. That commitment has shaped every decision we've made since day one.",
+      "Leadership in the technology industry is often misunderstood. Many people think it's about having the most certifications, the flashiest equipment, or the biggest sales numbers. In my experience, true leadership is about something far more fundamental: showing up consistently for the people who trust you, and building a team that does the same.",
+      "One of the earliest lessons I learned was that technical excellence and people skills are equally important. You can deploy the most sophisticated network infrastructure in the world, but if you can't communicate clearly with a client, understand their business goals, and earn their trust, the technology is meaningless. At Chrome Tech, we hire and train for both — we look for technicians who are not only skilled with their hands and their tools, but who can sit across from a business owner and speak plainly about what their technology needs to accomplish.",
+      "Servant leadership is a phrase that gets used a lot in business circles, but I believe in living it rather than just stating it. For me, servant leadership means that my role as President is to remove obstacles for my team so they can do their best work. It means listening more than I speak in client meetings, asking the right questions rather than assuming I already have the answers. When we win a contract or complete a project successfully, the credit belongs to the technicians and project managers who executed it. When something goes wrong, leadership owns that outcome and finds the path forward.",
+      "Building Chrome Tech has also taught me the importance of patience and long-term thinking. In a service business, reputation takes years to build and can be damaged in a single transaction. We've turned down projects that weren't the right fit, even when the revenue was attractive, because taking on work outside our core competency would have put client outcomes at risk. That discipline has paid dividends — when clients refer us to their colleagues, it's because we've earned that trust through consistent delivery, not because we over-promised and got lucky.",
+      "The IT industry is evolving faster than ever. Artificial intelligence, software-defined networking, edge computing, and the continued migration to cloud infrastructure are reshaping what businesses need from their technology partners. As a leader, my responsibility is to stay ahead of these changes — not to chase every trend, but to thoughtfully evaluate which technologies will genuinely improve outcomes for our clients and invest in the expertise to deliver them well.",
+      "I'm particularly passionate about workforce development. One of Chrome Tech's core missions is to create opportunities for skilled IT professionals in Texas, including technicians from communities that have historically been underrepresented in the technology sector. The talent is there — it just needs the right environment and opportunity to grow. When we invest in our team's development, they invest back in our clients, and the whole ecosystem becomes stronger.",
+      "To every business owner reading this: your technology infrastructure is not a cost center to be minimized — it is a strategic asset that directly enables your ability to compete, grow, and serve your customers. Partner with a team that understands that, and the return on that investment will far exceed the cost. That is the promise Chrome Tech makes to every client we serve, and it is the standard I hold myself and my team to every single day.",
+    ],
+  },
   {
     title: "What Causes Slow Internet in Office Networks?",
     excerpt:
