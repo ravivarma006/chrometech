@@ -103,7 +103,7 @@ export default function StructuredCablingPage() {
       {/* Hero */}
       <div className="service-hero">
         <Image
-          src="/services/cabling-hero.png"
+          src="/services/cabling-hero.webp"
           alt="Structured cabling fiber optic installation"
           fill
           style={{ objectFit: "cover", opacity: 0.35 }}
@@ -125,15 +125,15 @@ export default function StructuredCablingPage() {
             environments across Texas.
           </p>
           <div className="service-hero-actions">
-            <Link href="/#contact" className="btn btn-primary">
-              Request a Quote
+            <Link href="/contact" className="btn btn-primary">
+              Request Cabling Quote
             </Link>
             <Link
-              href="/#contact"
+              href="/contact"
               className="btn btn-outline"
               style={{ border: "1px solid rgba(255,255,255,0.38)", color: "white" }}
             >
-              Schedule a Survey
+              Schedule Site Survey
             </Link>
           </div>
         </div>
@@ -172,10 +172,11 @@ export default function StructuredCablingPage() {
               </div>
             </div>
             <Image
-              src="https://images.unsplash.com/photo-1604014237800-1c9102c219da?auto=format&fit=crop&w=1200&q=80"
-              alt="Structured cabling installation in data center"
-              width={1200}
-              height={460}
+              src="/img/svc-cabling-detail.webp"
+              alt="Chrome Tech technician installing structured cabling and fiber infrastructure"
+              width={1600}
+              height={900}
+              style={{ borderRadius: 16, width: "100%", height: "auto" }}
             />
           </div>
         </div>
@@ -330,6 +331,8 @@ export default function StructuredCablingPage() {
       <ServiceCTA
         heading="Ready to Build Your Cabling Infrastructure?"
         subtext="Chrome Tech LLC delivers clean, certified structured cabling and fiber installations across Texas. Request a site survey or quote today."
+        primaryCta="Request Cabling Quote"
+        secondaryCta="Schedule Site Survey"
       />
     </ServicePageLayout>
   );

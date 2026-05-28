@@ -57,8 +57,8 @@ export default function AboutPage() {
           <div className="container split">
             <div className="media-stack">
               <Image
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80"
-                alt="Chrome Tech team planning infrastructure deployment"
+                src="/img/about-team.webp"
+                alt="Chrome Tech LLC infrastructure team in the data center"
                 width={1200}
                 height={520}
                 style={{
@@ -146,6 +146,151 @@ export default function AboutPage() {
               </p>
             </div>
             <AboutValues />
+          </div>
+        </section>
+
+        {/* Leadership — Oladele Olora */}
+        <section className="dark" style={{ paddingTop: 80, paddingBottom: 80 }}>
+          <div className="container">
+            <div className="exec-profile">
+              {/* Text */}
+              <div className="exec-text">
+                <div className="exec-tag">Executive Profile</div>
+                <h2>
+                  Oladele
+                  <br />
+                  Olora
+                </h2>
+                <p className="exec-role">
+                  President &amp; Founder, Chrome Tech LLC &middot; Infrastructure
+                  &amp; Field Services Leader
+                </p>
+                <p className="exec-desc">
+                  Driving enterprise infrastructure operations, field services
+                  delivery, and data center support for commercial, enterprise,
+                  and mission-critical environments across Texas and nationwide.
+                </p>
+                <div className="exec-actions">
+                  <a
+                    href="https://ola.chrometech.online/#top"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-primary"
+                  >
+                    Full Profile
+                  </a>
+                  <Link href="/contact" className="btn btn-outline-light">
+                    Work With Us
+                  </Link>
+                </div>
+                <div className="exec-stats">
+                  <div className="exec-stat">
+                    <b>Founder</b>
+                    <span>Chrome Tech LLC</span>
+                  </div>
+                  <div className="exec-stat">
+                    <b>Infrastructure</b>
+                    <span>Data center &amp; field operations</span>
+                  </div>
+                  <div className="exec-stat">
+                    <b>Texas &amp; Beyond</b>
+                    <span>Enterprise service delivery</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Image */}
+              <div className="exec-image-wrap">
+                <div className="exec-image-card">
+                  <Image
+                    src="/img/exec-ola.webp"
+                    alt="Oladele Olora — President and Founder of Chrome Tech LLC"
+                    width={800}
+                    height={1000}
+                  />
+                  <div className="exec-badge">
+                    <div className="exec-badge-tag">Infrastructure Leadership</div>
+                    <div className="exec-badge-text">
+                      Building reliable,
+                      <br />
+                      Enterprise operations
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Leadership — Jennifer Parker */}
+        <section className="dark" style={{ paddingTop: 80, paddingBottom: 80, background: "linear-gradient(180deg, #06111f 0%, #0a1929 100%)" }}>
+          <div className="container">
+            <div className="exec-profile reverse">
+              {/* Text */}
+              <div className="exec-text">
+                <div className="exec-tag">Executive Profile</div>
+                <h2>
+                  Jennifer
+                  <br />
+                  Parker
+                </h2>
+                <p className="exec-role">
+                  Vice President, Chrome Tech LLC &middot; Cybersecurity-Focused
+                  Technology Leader
+                </p>
+                <p className="exec-desc">
+                  Building secure, resilient, and scalable technology
+                  environments for modern businesses across Central Texas.
+                </p>
+                <div className="exec-actions">
+                  <a
+                    href="https://jennifer.chrometech.online/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-primary"
+                  >
+                    Full Profile
+                  </a>
+                  <Link href="/insights" className="btn btn-outline-light">
+                    Read the Blog
+                  </Link>
+                </div>
+                <div className="exec-stats">
+                  <div className="exec-stat">
+                    <b>10+ Years</b>
+                    <span>Technology leadership experience</span>
+                  </div>
+                  <div className="exec-stat">
+                    <b>Cybersecurity</b>
+                    <span>Security-first strategy and operations</span>
+                  </div>
+                  <div className="exec-stat">
+                    <b>Chrome Tech</b>
+                    <span>Service-driven IT consulting</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Image */}
+              <div className="exec-image-wrap">
+                <div className="exec-image-card">
+                  <Image
+                    src="/img/exec-jennifer.webp"
+                    alt="Jennifer Parker — Vice President of Chrome Tech LLC"
+                    width={800}
+                    height={1000}
+                  />
+                  <div className="exec-badge">
+                    <div className="exec-badge-tag">Cybersecurity Leadership</div>
+                    <div className="exec-badge-text">
+                      Secure systems,
+                      <br />
+                      Enterprise insight
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 

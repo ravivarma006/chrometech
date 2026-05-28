@@ -43,17 +43,27 @@ export default function PartnershipsSection() {
           </div>
         </FadeIn>
 
-        {/* Right — partner cards */}
-        <StaggerGrid className="partner-grid">
-          {partners.map((p) => (
-            <StaggerItem key={p.title}>
-              <div className="partner">
-                <h3>{p.title}</h3>
-                <p>{p.body}</p>
-              </div>
-            </StaggerItem>
-          ))}
-        </StaggerGrid>
+        {/* Right — partner cards + CTA */}
+        <div>
+          <StaggerGrid className="partner-grid">
+            {partners.map((p) => (
+              <StaggerItem key={p.title}>
+                <div className="partner">
+                  <h3>{p.title}</h3>
+                  <p>{p.body}</p>
+                </div>
+              </StaggerItem>
+            ))}
+          </StaggerGrid>
+          <div style={{ marginTop: 28, display: "flex", gap: 14, flexWrap: "wrap" }}>
+            <a href="/contact" className="btn btn-primary">
+              Partner With Chrome Tech
+            </a>
+            <a href="/contact" className="btn btn-outline">
+              Request Subcontractor Support
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );

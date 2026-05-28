@@ -24,40 +24,40 @@ const services: {
   id?: string;
 }[] = [
   {
-    img: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1000&q=80",
-    alt: "Data center infrastructure",
+    img: "/img/svc-infrastructure.webp",
+    alt: "Enterprise data center infrastructure hall",
     icon: <Building2 size={24} />,
     title: "Infrastructure & Deployment Services",
     body: "Enterprise infrastructure support and deployment operations — smart hands, rack & stack, hardware installation, IMAC, migrations, staging, and asset management.",
     href: "/services/infrastructure-deployment",
   },
   {
-    img: "https://images.unsplash.com/photo-1520869562399-e772f042f422?auto=format&fit=crop&w=1000&q=80",
-    alt: "Field technician working on network rack",
+    img: "/img/svc-smarthands.webp",
+    alt: "Technician providing onsite smart hands and field support",
     icon: <Wrench size={24} />,
     title: "Smart Hands & Field Services",
     body: "Responsive on-site technical support — field technician dispatch, break/fix, remote hands, site surveys, infrastructure audits, and emergency response.",
     href: "/services/smart-hands-field-services",
   },
   {
-    img: "https://images.unsplash.com/photo-1604014237800-1c9102c219da?auto=format&fit=crop&w=1000&q=80",
-    alt: "Structured cabling and fiber",
+    img: "/img/svc-cabling.webp",
+    alt: "Structured cabling and overhead cable tray installation",
     icon: <Cable size={24} />,
     title: "Structured Cabling & Fiber Support",
     body: "Professional low-voltage and connectivity infrastructure — Cat5e, Cat6, Cat6A, fiber installation, termination, testing, certification, and rack connectivity.",
     href: "/services/structured-cabling-fiber",
   },
   {
-    img: "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1000&q=80",
-    alt: "Deployment workforce technician team",
+    img: "/img/svc-workforce.webp",
+    alt: "Chrome Tech deployment workforce and technician team",
     icon: <Users size={24} />,
     title: "Workforce & Staff Augmentation",
     body: "Scalable technician and deployment workforce support — short-term staffing, long-term project staffing, deployment teams, and resource coordination.",
     href: "/services/workforce-staff-augmentation",
   },
   {
-    img: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1000&q=80",
-    alt: "Managed IT and technology support",
+    img: "/img/svc-managed-it.webp",
+    alt: "Managed IT remote monitoring dashboard",
     icon: <Monitor size={24} />,
     title: "Managed IT & Technology Support",
     body: "Business technology support and infrastructure assistance — managed IT, remote monitoring, endpoint support, IT consulting, and firewall management.",
@@ -65,8 +65,8 @@ const services: {
     id: "technology",
   },
   {
-    img: "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1000&q=80",
-    alt: "Cybersecurity and infrastructure protection",
+    img: "/img/svc-cybersecurity.webp",
+    alt: "Cybersecurity and infrastructure protection shield",
     icon: <ShieldCheck size={24} />,
     title: "Cybersecurity & Infrastructure Protection",
     body: "Security-focused technology support and infrastructure best practices — security assessments, firewall configuration, endpoint protection, and network hardening.",
@@ -97,8 +97,9 @@ export default function ServicesSection() {
                 <Image
                   src={svc.img}
                   alt={svc.alt}
-                  width={1000}
-                  height={210}
+                  width={800}
+                  height={500}
+                  sizes="(max-width: 620px) 100vw, (max-width: 1000px) 50vw, 33vw"
                   style={{ height: 210, width: "100%", objectFit: "cover" }}
                 />
                 <div className="card-body">

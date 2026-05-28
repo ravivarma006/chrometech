@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 import FadeIn from "./FadeIn";
@@ -12,6 +13,7 @@ const testimonials = [
     name: "Joshua A.",
     role: "Data Center Operations Manager",
     industry: "Colocation Provider — Texas",
+    avatar: "/img/avatar-male.webp",
   },
   {
     quote:
@@ -19,6 +21,7 @@ const testimonials = [
     name: "Thyra O.",
     role: "VP of IT Infrastructure",
     industry: "Enterprise Technology — Houston",
+    avatar: "/img/avatar-female.webp",
   },
   {
     quote:
@@ -26,6 +29,7 @@ const testimonials = [
     name: "Taylor T.",
     role: "Project Manager",
     industry: "Managed Service Provider — Austin",
+    avatar: "/img/avatar-neutral.webp",
   },
   {
     quote:
@@ -33,6 +37,7 @@ const testimonials = [
     name: "Marcus R.",
     role: "Facilities Director",
     industry: "Commercial Real Estate — Dallas",
+    avatar: "/img/avatar-male.webp",
   },
 ];
 
@@ -74,9 +79,13 @@ export default function TestimonialsSection() {
                     {testimonials[index].quote}
                   </blockquote>
                   <div className="testimonial-author">
-                    <div className="testimonial-avatar">
-                      {testimonials[index].name.charAt(0)}
-                    </div>
+                    <Image
+                      src={testimonials[index].avatar}
+                      alt={testimonials[index].name}
+                      width={96}
+                      height={96}
+                      className="testimonial-avatar"
+                    />
                     <div>
                       <strong>{testimonials[index].name}</strong>
                       <span>{testimonials[index].role}</span>

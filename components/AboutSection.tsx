@@ -26,8 +26,8 @@ export default function AboutSection() {
         <FadeIn direction="left">
           <div className="media-stack">
             <Image
-              src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80"
-              alt="Enterprise infrastructure planning team"
+              src="/img/about-home.webp"
+              alt="Chrome Tech engineers reviewing data center rack infrastructure"
               width={1200}
               height={520}
               style={{ height: 520, width: "100%", objectFit: "cover", borderRadius: 30 }}

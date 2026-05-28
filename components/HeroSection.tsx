@@ -40,7 +40,7 @@ export default function HeroSection() {
           </p>
           <div className="hero-actions">
             <Link className="btn btn-primary" href="/contact">
-              Request Support
+              Request Infrastructure Support
             </Link>
             <Link className="btn btn-outline" href="/contact">
               Schedule Consultation
@@ -65,8 +65,8 @@ export default function HeroSection() {
         {/* Right column — LCP image, priority loaded */}
         <div className="hero-card">
           <Image
-            src="/hero-datacenter.jpg"
-            alt="Data center infrastructure racks"
+            src="/img/hero.webp"
+            alt="Chrome Tech technician servicing enterprise data center infrastructure"
             width={1200}
             height={430}
             sizes="(max-width: 1000px) 100vw, 50vw"

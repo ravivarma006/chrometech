@@ -103,7 +103,7 @@ export default function WorkforcePage() {
       {/* Hero */}
       <div className="service-hero">
         <Image
-          src="/services/workforce-hero.png"
+          src="/services/workforce-hero.webp"
           alt="Professional IT deployment team"
           fill
           style={{ objectFit: "cover", opacity: 0.35 }}
@@ -125,11 +125,11 @@ export default function WorkforcePage() {
             and nationwide.
           </p>
           <div className="service-hero-actions">
-            <Link href="/#contact" className="btn btn-primary">
-              Discuss Your Needs
+            <Link href="/contact" className="btn btn-primary">
+              Request Deployment Team
             </Link>
             <Link
-              href="/#contact"
+              href="/contact"
               className="btn btn-outline"
               style={{ border: "1px solid rgba(255,255,255,0.38)", color: "white" }}
             >
@@ -172,10 +172,11 @@ export default function WorkforcePage() {
               </div>
             </div>
             <Image
-              src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&q=80"
-              alt="IT deployment technicians working on a project"
-              width={1200}
-              height={460}
+              src="/img/svc-workforce-detail.webp"
+              alt="Chrome Tech professional IT deployment workforce team collaboration"
+              width={1600}
+              height={900}
+              style={{ borderRadius: 16, width: "100%", height: "auto" }}
             />
           </div>
         </div>
@@ -330,6 +331,8 @@ export default function WorkforcePage() {
       <ServiceCTA
         heading="Scale Your Technical Workforce Today"
         subtext="Whether you need one technician or a full deployment team, Chrome Tech LLC provides the pre-vetted workforce you need, when and where you need it."
+        primaryCta="Request Deployment Team"
+        secondaryCta="Schedule Consultation"
       />
     </ServicePageLayout>
   );

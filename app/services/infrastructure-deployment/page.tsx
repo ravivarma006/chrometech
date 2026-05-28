@@ -103,7 +103,7 @@ export default function InfrastructureDeploymentPage() {
       {/* Hero */}
       <div className="service-hero">
         <Image
-          src="/services/infrastructure-hero.png"
+          src="/services/infrastructure-hero.webp"
           alt="Enterprise data center infrastructure"
           fill
           style={{ objectFit: "cover", opacity: 0.35 }}
@@ -124,15 +124,15 @@ export default function InfrastructureDeploymentPage() {
             commercial environments, and mission-critical facilities across Texas and beyond.
           </p>
           <div className="service-hero-actions">
-            <Link href="/#contact" className="btn btn-primary">
-              Request Support
+            <Link href="/contact" className="btn btn-primary">
+              Start Deployment Project
             </Link>
             <Link
-              href="/#contact"
+              href="/contact"
               className="btn btn-outline"
               style={{ border: "1px solid rgba(255,255,255,0.38)", color: "white" }}
             >
-              Schedule Consultation
+              Request Deployment Team
             </Link>
           </div>
         </div>
@@ -172,10 +172,11 @@ export default function InfrastructureDeploymentPage() {
               </div>
             </div>
             <Image
-              src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80"
-              alt="Data center server racks with blue lighting"
-              width={1200}
-              height={460}
+              src="/img/svc-infrastructure-detail.webp"
+              alt="Chrome Tech technician performing rack assembly and infrastructure deployment"
+              width={1600}
+              height={900}
+              style={{ borderRadius: 16, width: "100%", height: "auto" }}
             />
           </div>
         </div>
@@ -330,6 +331,8 @@ export default function InfrastructureDeploymentPage() {
       <ServiceCTA
         heading="Ready to Deploy Your Infrastructure?"
         subtext="Chrome Tech LLC is ready to support your next data center project, rack deployment, or infrastructure migration. Contact us today."
+        primaryCta="Start Deployment Project"
+        secondaryCta="Request Deployment Team"
       />
     </ServicePageLayout>
   );

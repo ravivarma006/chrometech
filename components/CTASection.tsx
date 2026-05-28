@@ -27,7 +27,7 @@ export default function CTASection() {
 
           <div style={{ display: "grid", gap: 12 }}>
             <Link className="btn btn-primary" href="/contact">
-              Request Support
+              Request Infrastructure Support
             </Link>
             <a className="btn btn-light" href="tel:+15127370592">
               Schedule Consultation
@@ -36,7 +36,7 @@ export default function CTASection() {
               className="btn btn-outline"
               href="/contact"
             >
-              Partnership Inquiry
+              Request Subcontractor Support
             </Link>
           </div>
         </div>

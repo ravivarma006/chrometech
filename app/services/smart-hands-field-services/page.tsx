@@ -103,7 +103,7 @@ export default function SmartHandsPage() {
       {/* Hero */}
       <div className="service-hero">
         <Image
-          src="/services/smart-hands-hero.png"
+          src="/services/smart-hands-hero.webp"
           alt="Field technician working on network rack"
           fill
           style={{ objectFit: "cover", opacity: 0.35 }}
@@ -124,15 +124,15 @@ export default function SmartHandsPage() {
             enterprise environments, and commercial facilities across Texas and beyond.
           </p>
           <div className="service-hero-actions">
-            <Link href="/#contact" className="btn btn-primary">
-              Request a Technician
+            <Link href="/contact" className="btn btn-primary">
+              Dispatch Smart Hands Team
             </Link>
             <Link
-              href="/#contact"
+              href="/contact"
               className="btn btn-outline"
               style={{ border: "1px solid rgba(255,255,255,0.38)", color: "white" }}
             >
-              Schedule Consultation
+              Emergency Smart Hands Support
             </Link>
           </div>
         </div>
@@ -172,10 +172,11 @@ export default function SmartHandsPage() {
               </div>
             </div>
             <Image
-              src="https://images.unsplash.com/photo-1520869562399-e772f042f422?auto=format&fit=crop&w=1200&q=80"
-              alt="Network infrastructure deployment technician"
-              width={1200}
-              height={460}
+              src="/img/svc-smarthands-detail.webp"
+              alt="Chrome Tech field technician providing smart hands on-site support"
+              width={1600}
+              height={900}
+              style={{ borderRadius: 16, width: "100%", height: "auto" }}
             />
           </div>
         </div>
@@ -330,6 +331,8 @@ export default function SmartHandsPage() {
       <ServiceCTA
         heading="Need a Field Technician Now?"
         subtext="Chrome Tech LLC dispatches experienced smart hands technicians across Texas and beyond. Contact us for same-day or scheduled on-site support."
+        primaryCta="Request Field Technician"
+        secondaryCta="Emergency Smart Hands Support"
       />
     </ServicePageLayout>
   );

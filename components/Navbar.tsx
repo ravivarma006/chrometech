@@ -100,7 +100,7 @@ export default function Navbar() {
             <a href="/#partnerships">Partnerships</a>
             <Link href="/insights">Insights</Link>
             <Link href="/contact" className="btn btn-primary">
-              Request Support
+              Request Infrastructure Support
             </Link>
           </nav>
 
@@ -209,7 +209,7 @@ export default function Navbar() {
               style={{ width: "100%", justifyContent: "center" }}
               onClick={() => setMenuOpen(false)}
             >
-              Request Support
+              Request Infrastructure Support
             </Link>
           </div>
         </div>

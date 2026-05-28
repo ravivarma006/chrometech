@@ -105,7 +105,7 @@ export default function CybersecurityPage() {
       {/* Hero */}
       <div className="service-hero">
         <Image
-          src="/services/cybersecurity-hero.png"
+          src="/services/cybersecurity-hero.webp"
           alt="Cybersecurity infrastructure protection visualization"
           fill
           style={{ objectFit: "cover", opacity: 0.35 }}
@@ -127,11 +127,11 @@ export default function CybersecurityPage() {
             environments across Texas.
           </p>
           <div className="service-hero-actions">
-            <Link href="/#contact" className="btn btn-primary">
+            <Link href="/contact" className="btn btn-primary">
               Request Security Assessment
             </Link>
             <Link
-              href="/#contact"
+              href="/contact"
               className="btn btn-outline"
               style={{ border: "1px solid rgba(255,255,255,0.38)", color: "white" }}
             >
@@ -175,10 +175,11 @@ export default function CybersecurityPage() {
               </div>
             </div>
             <Image
-              src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1200&q=80"
-              alt="Cybersecurity monitoring and network protection"
-              width={1200}
-              height={460}
+              src="/img/svc-cybersecurity-detail.webp"
+              alt="Chrome Tech cybersecurity analyst monitoring infrastructure protection dashboard"
+              width={1600}
+              height={900}
+              style={{ borderRadius: 16, width: "100%", height: "auto" }}
             />
           </div>
         </div>
@@ -333,6 +334,8 @@ export default function CybersecurityPage() {
       <ServiceCTA
         heading="Strengthen Your Infrastructure Security Today"
         subtext="Chrome Tech LLC delivers practical, infrastructure-first cybersecurity support to help your business reduce risk and stay protected. Request an assessment today."
+        primaryCta="Request Security Assessment"
+        secondaryCta="Schedule Consultation"
       />
     </ServicePageLayout>
   );

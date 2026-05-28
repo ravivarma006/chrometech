@@ -103,7 +103,7 @@ export default function ManagedITPage() {
       {/* Hero */}
       <div className="service-hero">
         <Image
-          src="/services/managed-it-hero.png"
+          src="/services/managed-it-hero.webp"
           alt="Modern Network Operations Center with monitoring screens"
           fill
           style={{ objectFit: "cover", opacity: 0.35 }}
@@ -125,11 +125,11 @@ export default function ManagedITPage() {
             for enterprises across Texas.
           </p>
           <div className="service-hero-actions">
-            <Link href="/#contact" className="btn btn-primary">
-              Get a Free Assessment
+            <Link href="/contact" className="btn btn-primary">
+              Talk to an IT Specialist
             </Link>
             <Link
-              href="/#contact"
+              href="/contact"
               className="btn btn-outline"
               style={{ border: "1px solid rgba(255,255,255,0.38)", color: "white" }}
             >
@@ -173,10 +173,11 @@ export default function ManagedITPage() {
               </div>
             </div>
             <Image
-              src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=80"
-              alt="IT professionals in a technology operations environment"
-              width={1200}
-              height={460}
+              src="/img/svc-managed-it-detail.webp"
+              alt="Chrome Tech managed IT support and network operations center monitoring"
+              width={1600}
+              height={900}
+              style={{ borderRadius: 16, width: "100%", height: "auto" }}
             />
           </div>
         </div>
@@ -331,6 +332,8 @@ export default function ManagedITPage() {
       <ServiceCTA
         heading="Ready to Modernize Your IT Support?"
         subtext="Chrome Tech LLC delivers managed IT and technology support services that keep your business running — proactively monitored, professionally supported, and strategically guided."
+        primaryCta="Talk to an IT Specialist"
+        secondaryCta="Schedule Consultation"
       />
     </ServicePageLayout>
   );
