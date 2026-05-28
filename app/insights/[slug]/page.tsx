@@ -78,11 +78,51 @@ export default async function ArticlePage({ params }: Props) {
                 height: "auto",
                 borderRadius: 16,
                 objectFit: "cover",
+                objectPosition: "top",
               }}
               priority
             />
           </div>
         </div>
+
+        {/* Author card — only shown when article has an author */}
+        {article.author && (
+          <div style={{ background: "var(--light)", borderBottom: "1px solid var(--line)" }}>
+            <div className="container" style={{ maxWidth: 860, padding: "24px 20px" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: 18, flexWrap: "wrap" }}>
+                <Image
+                  src={article.author.image}
+                  alt={article.author.name}
+                  width={64}
+                  height={64}
+                  style={{ borderRadius: "50%", objectFit: "cover", objectPosition: "top", flexShrink: 0 }}
+                />
+                <div style={{ flex: 1, minWidth: 200 }}>
+                  <div style={{ fontSize: 12, fontWeight: 700, color: "var(--blue)", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 2 }}>
+                    Strategic Growth Team
+                  </div>
+                  <div style={{ fontWeight: 800, fontSize: 16, color: "var(--navy)", marginBottom: 2 }}>
+                    {article.author.name}
+                  </div>
+                  <div style={{ fontSize: 14, color: "var(--muted)" }}>
+                    {article.author.role}
+                  </div>
+                </div>
+                {article.author.profileUrl && (
+                  <a
+                    href={article.author.profileUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-outline"
+                    style={{ border: "1.5px solid var(--navy)", color: "var(--navy)", fontSize: 13, padding: "10px 20px", flexShrink: 0 }}
+                  >
+                    Strategic Technology Insights →
+                  </a>
+                )}
+              </div>
+            </div>
+          </div>
+        )}
 
         {/* Article Body */}
         <section>

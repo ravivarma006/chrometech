@@ -6,6 +6,12 @@ export type Article = {
   image: string;
   slug: string;
   content: string[];
+  author?: {
+    name: string;
+    role: string;
+    image: string;
+    profileUrl?: string;
+  };
 };
 
 export const categories = [
@@ -36,6 +42,31 @@ export const articles: Article[] = [
       "The IT industry is evolving faster than ever. Artificial intelligence, software-defined networking, edge computing, and the continued migration to cloud infrastructure are reshaping what businesses need from their technology partners. As a leader, my responsibility is to stay ahead of these changes — not to chase every trend, but to thoughtfully evaluate which technologies will genuinely improve outcomes for our clients and invest in the expertise to deliver them well.",
       "I'm particularly passionate about workforce development. One of Chrome Tech's core missions is to create opportunities for skilled IT professionals in Texas, including technicians from communities that have historically been underrepresented in the technology sector. The talent is there — it just needs the right environment and opportunity to grow. When we invest in our team's development, they invest back in our clients, and the whole ecosystem becomes stronger.",
       "To every business owner reading this: your technology infrastructure is not a cost center to be minimized — it is a strategic asset that directly enables your ability to compete, grow, and serve your customers. Partner with a team that understands that, and the return on that investment will far exceed the cost. That is the promise Chrome Tech makes to every client we serve, and it is the standard I hold myself and my team to every single day.",
+    ],
+  },
+  {
+    title: "Cybersecurity as a Business Strategy: Why Infrastructure Protection Starts at the Culture Level",
+    excerpt:
+      "Jennifer Parker, Strategic Technology Consultant at Chrome Tech LLC, shares how businesses can embed security thinking into their operations — not just their technology stack.",
+    category: "Leadership",
+    date: "May 28, 2026",
+    image: "/img/exec-jennifer.webp",
+    slug: "jennifer-parker-cybersecurity-business-strategy",
+    author: {
+      name: "Jennifer Parker",
+      role: "Strategic Technology Consultant, Chrome Tech LLC",
+      image: "/img/exec-jennifer.webp",
+      profileUrl: "https://jennifer.chrometech.online/",
+    },
+    content: [
+      "One of the most common misconceptions I encounter when working with businesses on their technology environments is that cybersecurity is purely a technical problem. It gets handed off to an IT team, a managed service provider, or a security vendor — and leadership assumes the issue is solved. In my experience, that approach leaves significant gaps.",
+      "Security is not a product you purchase. It is a posture you build across your entire organization. Technology tools — firewalls, endpoint protection, multi-factor authentication, monitoring platforms — are essential components, but they are only as effective as the people and processes surrounding them. A well-configured firewall cannot protect a business whose employees routinely click phishing links or share credentials over unsecured channels.",
+      "The businesses that handle cyber risk most effectively share one common trait: leadership treats security as a business priority, not an IT expense. When executives understand why cybersecurity matters to operational resilience, client trust, and regulatory compliance, they make better decisions about investment, staffing, and process design. Security becomes part of how the business operates — not a checkbox reviewed once a year.",
+      "For small and mid-sized businesses in Texas, the challenge is often resource constraints. Dedicated security staff is expensive. Maintaining awareness of an evolving threat landscape takes time that most business owners simply do not have. This is where strategic advisory support can make a meaningful difference — helping organizations prioritize the right controls for their specific risk profile, rather than trying to solve every possible threat at once.",
+      "Infrastructure is the foundation of every security strategy. The way your network is segmented, how your devices are managed, which systems have access to sensitive data, and how you respond when something goes wrong — these architectural decisions determine whether a security incident becomes a minor inconvenience or a business-threatening event. Getting the infrastructure right is not glamorous work, but it is the work that matters most.",
+      "I often advise clients to start with three questions: What data do we have that is most valuable or most regulated? Who has access to it, and is that access actually necessary? What would happen to our operations if that data were compromised or unavailable for 48 hours? The answers to those questions create a prioritized, practical security roadmap — one grounded in the realities of the business rather than a generic compliance framework.",
+      "Technology awareness is a skill that every team member in a modern organization needs at some level. Security awareness training, clear policies for device use and data handling, and regular communication about emerging threats help build the organizational muscle that makes security sustainable over time. Culture does not change overnight, but consistent reinforcement from leadership makes it possible.",
+      "At Chrome Tech, the focus on infrastructure integrity, reliable service delivery, and security-conscious operations reflects a commitment to building technology environments that businesses can actually depend on. The work is ongoing — threats evolve, infrastructure changes, and business needs grow. But the foundation is always the same: understand the risk, build the right controls, and stay engaged. That is the approach that delivers long-term security and long-term value.",
     ],
   },
   {
