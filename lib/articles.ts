@@ -70,7 +70,7 @@ export const articles: Article[] = [
     ],
   },
   {
-    title: "What Causes Slow Internet in Office Networks?",
+    title: "What Causes Slow Internet in Office Environments?",
     excerpt:
       "Common network bottlenecks that slow down business operations and how structured troubleshooting helps resolve them quickly.",
     category: "Networking",
@@ -110,7 +110,7 @@ export const articles: Article[] = [
     ],
   },
   {
-    title: "5 Signs Your Business Network Needs an Upgrade",
+    title: "5 Signs Your Business Infrastructure Needs an Upgrade",
     excerpt:
       "Recognizing the warning signs that your network infrastructure is holding back productivity and creating security vulnerabilities.",
     category: "Infrastructure",
@@ -130,28 +130,28 @@ export const articles: Article[] = [
     ],
   },
   {
-    title: "Why Structured Cabling Matters for Businesses",
+    title: "How to Plan a Seamless Office IT Relocation",
     excerpt:
-      "How a well-planned cabling infrastructure reduces downtime, simplifies maintenance, and supports future growth.",
-    category: "Cabling",
+      "A step-by-step guide to moving your IT infrastructure to a new office with minimal downtime and zero data loss.",
+    category: "Infrastructure",
     date: "March 10, 2026",
     image:
-      "https://images.unsplash.com/photo-1604014237800-1c9102c219da?auto=format&fit=crop&w=800&q=80",
-    slug: "structured-cabling-matters",
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80",
+    slug: "plan-seamless-office-it-relocation",
     content: [
-      "Structured cabling is the foundation of every reliable business network. It is the organized system of cables, patch panels, and connectivity hardware that links all of your technology infrastructure together — from workstations and phones to servers, security cameras, and wireless access points.",
-      "Unlike point-to-point cabling, where individual cables are run ad-hoc between devices, structured cabling follows a standardized architecture defined by TIA/EIA-568 standards. This architecture includes horizontal cabling from wall outlets to patch panels, backbone cabling between telecommunications rooms, and cross-connects that provide flexibility for moves, adds, and changes.",
-      "One of the most significant benefits of structured cabling is reduced downtime. When cables are properly labeled, organized, and routed through cable management, troubleshooting a connectivity issue takes minutes instead of hours. Technicians can quickly trace a connection from the patch panel to the wall outlet without digging through a tangled mess of unmarked cables.",
-      "Structured cabling also simplifies maintenance and upgrades. When you need to add new devices, relocate workstations, or upgrade to higher speeds, a well-designed cabling system makes these changes straightforward. Patch panel connections can be reconfigured without re-running cables, and properly rated cabling (Cat6 or Cat6A) supports higher speeds without replacement.",
-      "Scalability is another key advantage. A structured cabling system is designed with growth in mind, with spare capacity built into the initial installation. Additional drops can be activated by simply patching them in at the telecommunications room, rather than pulling new cables through walls and ceilings.",
-      "Cable performance directly impacts network performance. Poorly terminated cables, cables that exceed length limits, or cables routed too close to electrical interference sources introduce errors that cause retransmissions and reduce throughput. Every cable in a structured system is tested and certified to meet performance standards.",
-      "For businesses in Texas, environmental factors like heat and humidity also affect cabling choices. Plenum-rated cables are required in air-handling spaces, and outdoor or inter-building runs need UV-resistant and waterproof cable types. Fiber optic cabling is preferred for long distances and environments with electromagnetic interference.",
-      "Chrome Tech designs and installs structured cabling systems for commercial buildings, data centers, and enterprise campuses across Texas — delivering certified, future-ready infrastructure that supports your business today and tomorrow.",
+      "Relocating an office is challenging enough without the risk of IT failures disrupting business operations. A poorly planned IT move can result in days of downtime, lost data, and frustrated employees. With the right preparation, your technology infrastructure can be up and running at the new location within hours of the physical move.",
+      "Start planning at least 60 to 90 days before the move date. Begin with a complete inventory of every piece of IT equipment — servers, switches, firewalls, access points, UPS systems, printers, and workstations. Document serial numbers, configurations, and current rack positions. This inventory becomes your blueprint for the new site.",
+      "Assess the new location early. Verify that the electrical capacity, cooling, and physical space can support your equipment. Confirm that internet service providers can deliver connectivity before move day — ISP provisioning can take weeks, and a missed deadline means no internet on day one.",
+      "Create a detailed migration timeline with clear phases: pre-move preparation, equipment shutdown and disconnect, physical transport, reinstallation, and testing. Assign specific responsibilities to team members and vendors for each phase. Build buffer time into the schedule for unexpected issues.",
+      "Data backup is non-negotiable. Perform full backups of all servers and critical workstations before disconnecting anything. Verify that backups are complete and restorable. Store backup copies offsite or in the cloud so they are accessible regardless of what happens during transport.",
+      "Label everything before disconnecting. Every cable, every port, every device should have a clear label that matches your documentation. Color-coded labels by function — data, voice, power, management — speed up reconnection at the new site. Photograph rack layouts front and back before disassembly.",
+      "On move day, shut down equipment in the correct order: applications first, then operating systems, then storage, then supporting infrastructure. Transport sensitive equipment in padded, anti-static containers. Avoid stacking servers or placing heavy items on top of equipment.",
+      "Chrome Tech provides end-to-end IT relocation services across Texas — from pre-move planning and inventory through equipment transport, rack-and-stack installation, and post-move testing. We ensure your business is back online fast with zero data loss.",
     ],
   },
   {
     title:
-      "Understanding Network Switches: The Backbone of Business Connectivity",
+      "Understanding Managed Switches: The Backbone of Business Connectivity",
     excerpt:
       "A deep dive into managed vs. unmanaged switches, PoE capabilities, and how to choose the right switch for your environment.",
     category: "Networking",
@@ -253,23 +253,22 @@ export const articles: Article[] = [
     ],
   },
   {
-    title: "Why Network Rack Cleanup Improves Performance and Security",
+    title: "How Smart Hands Support Reduces IT Downtime",
     excerpt:
-      "Messy racks create airflow issues, increase troubleshooting time, and introduce security risks. Here's how to fix it.",
-    category: "Infrastructure",
+      "On-site technical support keeps your infrastructure running when remote troubleshooting falls short — minimizing downtime and accelerating resolution.",
+    category: "Smart Hands",
     date: "February 26, 2026",
     image:
-      "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80",
-    slug: "network-rack-cleanup-performance-security",
+      "https://images.unsplash.com/photo-1600267185393-e158a98703de?auto=format&fit=crop&w=800&q=80",
+    slug: "smart-hands-support-reduces-it-downtime",
     content: [
-      "A messy network rack is more than an eyesore — it is a liability. Tangled cables, unlabeled connections, and disorganized equipment create real problems that affect network performance, increase troubleshooting time, and introduce security risks. A structured rack cleanup delivers immediate, measurable improvements.",
-      "Airflow is the most direct performance concern. Network equipment generates significant heat, and proper airflow is essential to prevent overheating. When cables block airflow paths, equipment runs hotter, fans work harder, and components degrade faster. In severe cases, overheating causes equipment failures and unplanned downtime. A clean rack with proper cable management ensures unobstructed front-to-back airflow.",
-      "Troubleshooting time is dramatically affected by rack organization. When every cable is labeled and routed through cable management, a technician can trace any connection in minutes. In a messy rack, the same task can take hours — and there is a real risk of accidentally disconnecting the wrong cable, causing an outage while trying to fix one.",
-      "Security risks emerge when rack organization breaks down. Undocumented connections may represent unauthorized devices on the network. Patch cables plugged into the wrong ports can bypass VLAN segmentation and firewall rules. Without clear labeling and documentation, it is impossible to verify that the physical network matches the intended configuration.",
-      "A proper rack cleanup follows a structured process. Start with a complete audit of every device and cable in the rack. Document what is connected to what, identify any undocumented or unauthorized equipment, and create an updated network diagram. This audit alone often reveals forgotten devices, redundant connections, and configuration drift.",
-      "Replace damaged or substandard patch cables with new, appropriately sized cables. Using cables that are too long creates unnecessary bulk, while cables that are too short create strain on connectors. Color-coding patch cables by function (data, voice, management, uplinks) improves visual identification and reduces errors.",
-      "Install or upgrade cable management hardware. Horizontal cable managers between every one or two rack units keep patch cables organized. Vertical cable managers on the sides of the rack route cables from patch panels to switches without crossing airflow paths. Velcro ties — not zip ties — allow for future changes without cutting and re-securing cables.",
-      "Chrome Tech provides network rack cleanup and infrastructure organization services for data centers, server rooms, and telecommunications closets across Texas — transforming chaotic racks into clean, documented, maintainable infrastructure.",
+      "When critical IT equipment fails, every minute of downtime costs money. Remote monitoring tools can detect problems instantly, but many hardware issues require physical intervention — a server that needs rebooting, a failed drive that needs swapping, or a loose cable that needs re-seating. Smart hands support bridges the gap between remote IT teams and on-site infrastructure.",
+      "Smart hands technicians are trained field engineers dispatched to your data center, server room, or office location to perform hands-on tasks directed by your remote IT staff. They act as your physical presence at the site, executing precise instructions — from racking equipment and running cables to performing visual inspections and hardware replacements.",
+      "The most immediate benefit is faster incident response. Without smart hands support, a remote IT team facing a hardware failure must coordinate emergency travel, often across cities or states. That process can take hours or even days. With a smart hands provider like Chrome Tech, a qualified technician can be on-site within an agreed SLA window — often within two to four hours.",
+      "Routine maintenance tasks also benefit significantly. Firmware upgrades that require physical console access, scheduled hardware replacements, and periodic infrastructure audits all demand on-site presence. Rather than flying staff to each location, organizations use smart hands technicians to handle these planned activities efficiently and cost-effectively.",
+      "Break-fix scenarios highlight the real value of responsive smart hands coverage. A failed power supply, a malfunctioning switch, or a connectivity issue in a remote branch office can cripple business operations. Having a trusted provider who can dispatch a technician with the right skills and parts dramatically reduces mean time to resolution.",
+      "Documentation and reporting close the loop. Professional smart hands providers deliver detailed work orders, timestamped photo documentation, and completion reports for every site visit. This gives remote IT teams full visibility into what was done, what was found, and what may need follow-up attention.",
+      "Chrome Tech delivers smart hands and field services across Texas — providing rapid-response on-site technical support for data centers, colocation facilities, branch offices, and retail locations. Our technicians handle everything from emergency break-fix to scheduled deployments, so your infrastructure stays operational around the clock.",
     ],
   },
 ];
