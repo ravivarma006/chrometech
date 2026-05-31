@@ -6,7 +6,7 @@ import StaggerGrid, { StaggerItem } from "./StaggerGrid";
 
 const industries = [
   {
-    img: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
+    img: "/img/industry-datacenter.webp",
     alt: "Data centers and colocation facilities",
     title: "Data Centers & Colocation",
   },
